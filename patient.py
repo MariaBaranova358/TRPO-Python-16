@@ -22,3 +22,7 @@ class Hospital:
                         parts[0], parts[1], parts[2], 
                         int(parts[3]), parts[4], parts[5], int(parts[6])
                     ))
+
+    
+    def sort_by_last_name(self, reverse=False):
+      	self.patients.sort(key=lambda p: p.last_name, reverse=reverse)
